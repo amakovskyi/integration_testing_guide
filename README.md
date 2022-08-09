@@ -39,3 +39,11 @@ _______
 
 [7. Useful advices](guide/07_UsefulAdvices.md)
 
+_______
+
+# api-auditor
+
+A NodeJS library for integration testing.
+
+[https://www.npmjs.com/package/@amakovskyi/api-auditor](https://www.npmjs.com/package/@amakovskyi/api-auditor)
+
