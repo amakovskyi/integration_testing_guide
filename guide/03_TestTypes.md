@@ -1,11 +1,5 @@
 # Integration test types
 
-### Feature tests
-
-Feature tests works not around single endpoint or controllers, but on specific features.
-
-Simulate feature flows as it expected to be used by end user.
-
 ### Functional
 
 This types of tests should validate each single endpoint works correctly.
@@ -81,7 +75,9 @@ if it is not completely valid.
 
 ### Feature
 
-It is like testing users stories. Do same what your testers going to do :)
+Feature tests works not around single endpoint or controllers, but on specific features.
+
+It is like testing users stories. Simulate feature flows as it expected to be used by end user. Do the same what your testers going to do :)
 
 By the fact mostly these tests not needed, as other types of tests covers everything. But in cases when it is needed -
 you will "feel" it.
