@@ -1,4 +1,4 @@
-# Useful advices
+# Useful advice
 
 ## Pooling
 

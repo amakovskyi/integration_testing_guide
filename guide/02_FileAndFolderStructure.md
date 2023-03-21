@@ -15,26 +15,26 @@ Use ```TestName.test.ts``` as base test name.
 package.json
 ```
 
-* ```🗀 src``` contains classes, used for tests, but not test itself, like API client, utils etc.
+* ```🗀 src``` contains classes used for tests but not tests themselves. Put here API client, utils etc.
 * ```🗀 test/_features``` feature tests; use exactly this folder name;
-* ```🗀 test/main_api``` tests for "main api"
-* ```🗀 test/second_api``` tests for "second api"
+* ```🗀 test/main_api``` tests for "main API"
+* ```🗀 test/second_api``` tests for "second API"
 
 Underscore character (```_```) is used to:
 
-* identify standard folders
-* place them on top of alphabetical sorting
+* Identify standard folders.
+* Place them on top of the alphabetical sorting.
 
 ### Feature tests
 
 Folder ```🗀 test/_feature``` should contain feature testing.
 
-It is complex flows testing which can involve usage a lot of different endpoints from many services.
+It is for complex flow testing, which can involve using many endpoints from many services.
 
 ### API tests
 
-Each api should have its own folder for tests. For example, if your application contains two APIs names "main" and "
-second" use folders ```🗀 test/main_api``` and ```🗀 test/second_api```.
+Each API should have its folder for tests. For example, if your application contains two APIs named "main" and "
+second," use folders ```🗀 test/main_api``` and ```🗀 test/second_api```.
 
 **Internal structure**
 
@@ -74,13 +74,13 @@ second" use folders ```🗀 test/main_api``` and ```🗀 test/second_api```.
   🗀 second_api
 ```
 
-* When ```/path/to/controller``` is controller path, then use folder-structure based on it: folder ```🗀 path```, inside
-  folder ```🗀 to```, then inside folder ```🗀 controller```.
+* When ```/path/to/controller``` is the controller path, use folder structure based on it: folder ```🗀 path```, inside
+  a folder ```🗀 to```, then inside folder ```🗀 controller```.
 * Place under controller next folders:
-    * ```🗀 _functional``` - functional endpoint tests, one per endpoint. Optionally special cases can be written in additional file - per endpoint or per controller, based on case.
-    * ```🗀 _security``` - security tests, can have test names based on security structure.
+    * ```🗀 _functional``` - functional endpoint tests, one per endpoint. Optionally special cases can be written in additional files - per endpoint or controller based on a specific case.
+    * ```🗀 _security``` - security tests can have test names based on security structure.
     * ```🗀 _validation``` - validation endpoint test, one per endpoint.
-    * ```🗀 _interoperation``` should contain tests, which validates interoperation between different
+    * ```🗀 _interoperation``` should contain tests which validate interoperation between different
       controllers/features.
 
 ### Test file naming
@@ -103,12 +103,12 @@ second" use folders ```🗀 test/main_api``` and ```🗀 test/second_api```.
     * ```GET [/path/to/controller/action] functional```
     * ```POST [/users/profile] validation```
     * ```POST [/users/admin/block] security```
-    * ```POST [/users/admin/block] feature: special case```
+    * ```POST [/users/admin/block] feature: some special case```
 * For interoperation test: ```INITIATOR + RESPONDER```
     * ```GET [/path/to/controller/action] functional```
     * ```POST [/users/profile] validation```
     * ```POST [/users/admin/block] security```
-    * ```POST [/users/admin/block] feature: special case```
+    * ```POST [/users/admin/block] feature: some special case```
 * For feature test: ```FEATURE_NAME```
   * ```Authorization```
   * ```User purchase flow```
